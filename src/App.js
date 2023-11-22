@@ -8,6 +8,7 @@ function App() {
   const grade = useRef(null)
   const assignment = useRef(null)
 
+  // Function to update list of student data
   const handleSubmit = event => {
     event.preventDefault()
     
@@ -20,7 +21,8 @@ function App() {
     grade.current.value = ''
     assignment.current.value = ''
   }
-// ['one', 'two']; 0, 1
+
+  // Function to display new data in the table
   const displayList = () => {
     return form.map((row, index) => (
       <tr key={index}>
